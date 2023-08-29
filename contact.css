@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.wwrHeader {
+    font-family: Prompt;
+    color: whitesmoke;
+    font-size: 190%;
+    text-align: center;
+    padding: 15px;
+    animation: appear 1s ease-in;
+}
+
+.wwrDiv {
+    background-color: #1B4AC5;
+    animation: appear 1s ease-in;
+}
+
+.monkeInfo {
+    padding-left: 10px;
+    padding-top: 20px;
+    font-family: monospace;
+    font-size: xx-large;
+}
+
+.mrMonke,
+.monkeDesc,
+.monkeImg,
+.monkeContact {
+    animation: slideInLeft 1s ease-in;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-1000px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.better {
+    padding: 3%;
+    display: inline-block;
+    margin-top: 20%;
+    text-align: center;
+}
+
+.betterText {
+    font-family: monospace;
+    font-size: 140%;
+    width: 100%;
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(162), cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
